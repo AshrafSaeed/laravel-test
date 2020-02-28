@@ -19,5 +19,5 @@ Included
 - Create DB in your mysql e.g. Laravel-test
 - Run DB Migration and DB seeded command ( php artisan migrate:fresh --seed )
 - Login with User: admin@laravel-test.com Password: secret
-- Click on User table on top right corner you will see some Users, active them and assign role
-- Admin can change the Role permission as well on same menu
+- Once User Logged In Click on User menu on top right corner, you will see some Users, active them and assign role
+- Owner can change the Role permission as well 
