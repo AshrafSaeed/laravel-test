@@ -52,7 +52,7 @@ class Campaign extends Model
         if(Auth::user()->hasRole('owner')) {
             return $query->orderBy('updated_at', 'desc')->paginate(5);
         } else {
-            return $query->where('user_id', Auth::id())->orderBy('updated_at', $order)->paginate(5);
+            return $query->where('user_id', Auth::id())->orderBy('updated_at', 'desc')->paginate(5);
         }
 
     }

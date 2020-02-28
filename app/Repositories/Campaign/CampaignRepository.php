@@ -87,11 +87,11 @@ class CampaignRepository implements CampaignRepositoryImplement
         // Find campaign 
         $campaign = Campaign::findOrFail($campaign_id);
 
-        // Get All Brands 
-        $brands = Brand::all();
+        // Get campaign Brands 
+        $brands = Brand::GetAll();
 
         // Get All Locations 
-        $locations = Location::all();
+        $locations = Location::GetAll();
 
         return  compact('campaign', 'brands', 'locations');
 	}
