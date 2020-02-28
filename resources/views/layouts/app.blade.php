@@ -49,24 +49,28 @@
                                 </li>
                             @endif
                         @else
-                            @hasanyrole('owner|admin')
+
+                            @can('view brand')
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('brand.index') }}">{{ __('Brand') }}</a>
 
                                 </li>
-                            @endhasanyrole
+                            @endcan
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('campaign.index') }}">{{ __('Campaign') }}</a>
+                            @can('view campaign')
 
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('campaign.index') }}">{{ __('Campaign') }}</a>
 
-                            @hasanyrole('owner|admin')
+                                </li>
+                            @endcan
+
+                            @can('view location')
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('location.index') }}">{{ __('Locations') }}</a>
 
                                 </li>
-                            @endhasanyrole
+                            @endcan
 
                             @hasanyrole('owner')
                                 <li class="nav-item">

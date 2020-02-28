@@ -36,9 +36,9 @@ class Location extends Model
     public function scopeGetAll($query)
     {
         if(Auth::user()->hasRole('owner')) {
-            return $query->orderBy('updated_at', 'desc')->get();
+            return $query->orderBy('updated_at', 'desc')->paginate(5);
         } else {
-            return $query->where('user_id', Auth::id())->orderBy('updated_at', 'desc')->get();
+            return $query->where('user_id', Auth::id())->orderBy('updated_at', 'desc')->paginate(5);
         }
     }
 }

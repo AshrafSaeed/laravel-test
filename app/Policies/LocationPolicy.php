@@ -43,7 +43,7 @@ class LocationPolicy
      * @param  \App\Location  $location
      * @return mixed
      */
-    public function view(User $user, Location $location)
+    public function view(User $user)
     {
         return $user->hasPermissionTo('view location');
     }
@@ -66,7 +66,7 @@ class LocationPolicy
      * @param  \App\Location  $location
      * @return mixed
      */
-    public function update(User $user, Location $location)
+    public function update(User $user)
     {
         return $user->hasPermissionTo('update location');
     }
@@ -78,7 +78,7 @@ class LocationPolicy
      * @param  \App\Location  $location
      * @return mixed
      */
-    public function delete(User $user, Location $location)
+    public function delete(User $user)
     {
         return $user->hasPermissionTo('delete location');
     }

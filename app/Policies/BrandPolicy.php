@@ -43,7 +43,7 @@ class BrandPolicy
      * @param  \App\Brand  $brand
      * @return mixed
      */
-    public function view(User $user, Brand $brand)
+    public function view(User $user)
     {
         return $user->hasPermissionTo('view brand');
     }
@@ -66,7 +66,7 @@ class BrandPolicy
      * @param  \App\Brand  $brand
      * @return mixed
      */
-    public function update(User $user, Brand $brand)
+    public function update(User $user)
     {
         return $user->hasPermissionTo('update brand');
     }
@@ -78,7 +78,7 @@ class BrandPolicy
      * @param  \App\Brand  $brand
      * @return mixed
      */
-    public function delete(User $user, Brand $brand)
+    public function delete(User $user)
     {
         return $user->hasPermissionTo('delete brand');
     }

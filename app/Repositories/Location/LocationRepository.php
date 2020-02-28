@@ -13,7 +13,7 @@ class LocationRepository implements LocationRepositoryImplement
 	public function all() {
 	
         // Get All Locations 
-        return Location::orderBy('updated_at', 'desc')->paginate(5);
+        return Location::GetAll();
 
 	}
 
@@ -88,6 +88,5 @@ class LocationRepository implements LocationRepositoryImplement
         }
 
 	}
-
 	
 }
