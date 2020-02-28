@@ -2,26 +2,22 @@
 
 ## Laravel Test
 
-Laravel Test is an application Authentication, roles and permissions.
-which include Laravel-Permission Package and forther more a CRUD Brand, Campaign and Location.
+Laravel-Test is an application for Authentication, Roles and Permissions. Which include Laravel-Permission Package and furthermore a CRUD Brand, Campaign and Location.
 
-Included 
+Included
+- DB migration files
+- DB Seeder
+- CRUD for Brands
+- CRUD for Location
+- CRUD for Campaign
+- CRUD for User
+- Update Role, assign Role to User and User Active and Inactive
 
-- DB migration files 
-- DB Seeder 
-- CRUD for Brands 
-- CRUD for Brands 
-- CRUD for Brands 
-- CRUD for User 
-- Update Role, assign Role to User and User Active and Inactive 
+## Installation Guide
 
-
-## Instalation Guide
-
-- Download project in your local 
-- Create DB in your mysql laravel-test
-- Run DB Migrasion and DB seeded 
-	command ( php artisan migrate:fresh --seed ) 
+- Download project in your local
+- Create DB in your mysql e.g. Laravel-test
+- Run DB Migration and DB seeded command ( php artisan migrate:fresh --seed )
 - Login with User: admin@laravel-test.com Password: secret
 - Click on User table on top right corner you will see some Users, active them and assign role
-- Admin can change the Role permission as well on same menu 
+- Admin can change the Role permission as well on same menu
