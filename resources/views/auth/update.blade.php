@@ -44,7 +44,8 @@
                             <label for="is_active" class="col-md-4 col-form-label text-md-right">{{ __('is_active') }}</label>
 
                             <div class="col-md-6">
-                                <input type="checkbox" name="is_active" checked="checked" />
+                                <input type="checkbox" name="is_active" 
+                                @if(old('role', $user->is_active)) checked="checked" @endif  />
                             </div>
                         </div>
 
@@ -52,14 +53,12 @@
                             <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
 
                             <div class="col-md-6">
-                                {{ $user->roles->pluck('name') }}
                                 <select id="role" name="role">
                                     <option value="">Select Role</option>
                                     @foreach($roles as $role)
-                                        <option @if(old('role' ) == $role->id ) selected @endif value="{{ $role->id }}">{{ $role->name }}</option>
+                                        <option @if(old('role', $user->hasRole($role->id) ) == $role->id ) selected @endif value="{{ $role->id }}">{{ $role->name }}</option>
                                     @endforeach
                                 </select>
-                            
                             </div>
                         </div>
 

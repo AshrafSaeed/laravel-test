@@ -32,16 +32,12 @@
 
 			        <div class="form-group row">
 					    @foreach ($permissions as $permission)
-
                             <div class="col-md-3">
-
 					        	<div class="checkbox">
 								  	<label><input type="checkbox" value="{{ $permission->id }}" name="permissions[]" {{ ($role->hasPermissionTo($permission->id)) ? 'checked' : '' }} /> {{ ucfirst($permission->name) }}</label>
 								</div>
 							</div>
-
 					    @endforeach
-
 			        </div>
 
 			        <div class="form-group">

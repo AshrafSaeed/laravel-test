@@ -41,7 +41,7 @@
                                 <td>{{ $user->name }}</th>    
                                 <td>{{ $user->email }}</td>
                                 <td>{{ ($user->is_active) ? 'Active' : 'Inactive' }}</td>
-                                <td>{{ $user->getRoleNames() }}</td>
+                                <td>{{ str_replace(array('[',']','"'),'', $user->getRoleNames()) }}</td>
                                 <td>{{ $user->created_at }}</td>
                                 <td>
                                     <form action="{{ route('user.destroy', $user->id) }}" method="POST" id="deleteUser{{ $user->id }}">
