@@ -15,7 +15,7 @@ class UserController extends Controller
 
     public function __construct(UserRepositoryImplement $userrap ) {
 
-        // $this->middleware(['role:owner']);
+        $this->middleware(['role:owner']);
         return $this->userrap = $userrap;
     
     }

@@ -56,7 +56,7 @@ class LocationPolicy
      */
     public function create(User $user)
     {
-        return $user->hasPermissionTo('craete location');
+        return $user->hasPermissionTo('create location');
     }
 
     /**

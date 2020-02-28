@@ -2,12 +2,26 @@
 
 ## Laravel Test
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel Test is an application Authentication, roles and permissions.
+which include Laravel-Permission Package and forther more a CRUD Brand, Campaign and Location.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Included 
+
+- DB migration files 
+- DB Seeder 
+- CRUD for Brands 
+- CRUD for Brands 
+- CRUD for Brands 
+- CRUD for User 
+- Update Role, assign Role to User and User Active and Inactive 
+
+
+## Instalation Guide
+
+- Download project in your local 
+- Create DB in your mysql laravel-test
+- Run DB Migrasion and DB seeded 
+	command ( php artisan migrate:fresh --seed ) 
+- Login with User: admin@laravel-test.com Password: secret
+- Click on User table on top right corner you will see some Users, active them and assign role
+- Admin can change the Role permission as well on same menu 
