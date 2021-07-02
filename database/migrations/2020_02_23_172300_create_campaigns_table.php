@@ -15,7 +15,7 @@ class CreateCampaignsTable extends Migration
     {
 
         Schema::enableForeignKeyConstraints();
-
+ 
         Schema::create('campaigns', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name', 200);

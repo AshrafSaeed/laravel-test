@@ -19,7 +19,7 @@ class CreateMediaTable extends Migration
             $table->string('path', 200);
             $table->nullableMorphs('mediaable');
             $table->timestamps();
-        });
+        }); 
     }
 
     /**

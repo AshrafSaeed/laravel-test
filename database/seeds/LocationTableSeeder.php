@@ -16,5 +16,5 @@ class LocationTableSeeder extends Seeder
     	});
 
         return true;
-    }
+    } 
 }

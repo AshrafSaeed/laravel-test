@@ -17,12 +17,9 @@ class BrandTableSeeder extends Seeder
 	        $user->brand()->saveMany(factory('App\Brand'::class, 5)->make()->each(function($brand){
 
                 $brand->media()->saveMany(factory('App\Media'::class, 1)->make());
-            
             }));
-
     	});
-
-
+        
     	return true;
 
     }

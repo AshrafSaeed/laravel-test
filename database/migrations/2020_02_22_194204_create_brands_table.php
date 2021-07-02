@@ -23,7 +23,7 @@ class CreateBrandsTable extends Migration
             $table->timestamps();
 
         });
-    }
+    } 
 
     /**
      * Reverse the migrations.

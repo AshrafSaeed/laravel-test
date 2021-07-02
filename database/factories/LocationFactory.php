@@ -10,3 +10,4 @@ $factory->define(Location::class, function (Faker $faker) {
         'name' => $faker->city,
     ];
 });
+
