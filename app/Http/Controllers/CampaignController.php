@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
 use App\Http\Requests\CampaignRequest;
 use App\Repositories\Campaign\CampaignRepositoryImplement;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Auth;
-
 
 class CampaignController extends Controller
 {

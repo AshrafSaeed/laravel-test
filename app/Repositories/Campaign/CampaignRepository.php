@@ -2,11 +2,7 @@
 
 namespace App\Repositories\Campaign;
 
-use App\Brand;
-use App\Media;
-use App\Location;
-use App\Campaign;
-
+use App\{ Brand, Media, Location, Campaign };
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;

@@ -8,6 +8,7 @@ use App\Repositories\Location\LocationRepositoryImplement;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Auth;
 
+
 class LocationController extends Controller
 {
 

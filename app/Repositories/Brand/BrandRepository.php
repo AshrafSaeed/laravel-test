@@ -24,7 +24,6 @@ class BrandRepository implements BrandRepositoryImplement
         }
 
 		try {
-
             // Transaction Begin
             DB::beginTransaction();     
 

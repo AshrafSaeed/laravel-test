@@ -3,7 +3,6 @@
 namespace App\Repositories\Brand;
 
 use Illuminate\Support\ServiceProvider;
-
 use App\Repositories\Brand\BrandRepositoryImplement;
 use App\Repositories\Brand\BrandRepository;
 

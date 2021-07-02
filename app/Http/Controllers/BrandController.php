@@ -86,6 +86,7 @@ class BrandController extends Controller
         $message = $this->brand->update($brand_id, $request);
 
         return redirect('brand')->with('status', $message);
+        
     }
 
     /**

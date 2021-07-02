@@ -7,7 +7,6 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
-
 class Campaign extends Model
 {
     protected $guarded = [];

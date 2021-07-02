@@ -13,5 +13,4 @@ interface BrandRepositoryImplement {
 	public function update($brand_id, $request);
 
 	public function destroy($brand_id);
-
 }

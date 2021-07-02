@@ -3,10 +3,7 @@
 namespace App\Repositories\Location;
 
 use App\Location;
-
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\{ DB, Auth, Gate };
 
 class LocationRepository implements LocationRepositoryImplement 
 {	

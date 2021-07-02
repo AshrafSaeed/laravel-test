@@ -16,6 +16,7 @@ Included
 ## Installation Guide
 
 - Download project in your local
+- Run composer command 'composer install'
 - Create DB in your mysql e.g. Laravel-test
 - Run DB Migration and DB seeded command ( php artisan migrate:fresh --seed )
 - Login with User: admin@laravel-test.com Password: secret
